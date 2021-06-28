@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus:not(:disabled):not(.disabled),
+.btn:focus,
+.btn:active,
+.btn:hover {
+  box-shadow: none !important;
+  outline: 0;
+}
+
+li {
+  cursor: pointer;
+}
+
+.imp,
+.del {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.important {
+  color: #3341D8;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text {
+  display: inline-block;
+  min-width: 80%;
+  overflow: scroll;
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+.toggleBtn {
+  display: flex;
+  align-items: baseline;
+}
+
+.addTask-btn:active {
+  color: rgba(100, 200, 100, 0.5);
+}
