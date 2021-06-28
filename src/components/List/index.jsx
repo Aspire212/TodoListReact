@@ -11,6 +11,7 @@ const List = ({ list, setTasks, tasks }) => {
             id={task.id}
             title={task.text}
             setTasks={setTasks}
+            task={task}
             tasks={tasks}
             status={task.status}
             important={task.important}

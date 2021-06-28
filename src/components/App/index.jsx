@@ -18,6 +18,7 @@ const App = ({ firstTasks }) => {
   
 
   useEffect(() => {
+    setTasks(tasks)
     setDone(tasks.filter(task => task.status))
     setImportant(tasks.filter(task => task.important === true))
     setSearch(tasks)

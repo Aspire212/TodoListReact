@@ -1,17 +1,15 @@
 import React from "react";
 import Btn from "../../Btn/index.jsx";
 
-const ListItem = ({ title, id, setTasks, tasks, status, important }) => {
+const ListItem = ({ title, id, setTasks, task, tasks, status, important }) => {
   const changeStatus = (id) => {
-    let temp = JSON.parse(JSON.stringify(tasks))
-    temp[id].status = !status;
-    setTasks([...temp]);
+    task.status = !status;
+    setTasks([...tasks]);
   };
 
   const changeImportant = (id) => {
-    let temp = JSON.parse(JSON.stringify(tasks))
-    temp[id].important = !important;
-    setTasks([...temp]);
+    task.important = !important;
+    setTasks([...tasks]);
   };
 
   const deleteTask = (id) => {
